@@ -28,7 +28,7 @@
 
 - (instancetype)init{
     if(self = [super init]){
-        
+        [self setup];
     }
     return self;
 }
@@ -64,7 +64,7 @@
 }
 
 - (void)readPack{
-    struct usbmux_packet ref_upacket;
+    struct Usbmux_packet ref_upacket;
     dispatch_io_read(self.io, 0, sizeof(ref_upacket.size), self.queue, ^(bool done, dispatch_data_t  _Nullable data, int error) {
         if (!done){
             return;
@@ -83,7 +83,7 @@
             NSLog(@"CYUSBChannel : read pack failed");
         }
         memcpy((void *)&(upacket_len), (const void *)buffer, buffer_size);
-        uint32_t payloadLength = upacket_len - (uint32_t)sizeof(usbmux_packet);
+        //uint32_t payloadLength = upacket_len - (uint32_t)sizeof(Usbmux_packet);
 
     });
 }
