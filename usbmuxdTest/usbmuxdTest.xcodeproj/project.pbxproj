@@ -10,6 +10,7 @@
 		4A40C14B225501220033118F /* CYUsbPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40C14A225501220033118F /* CYUsbPort.m */; };
 		4A4231212253BF7000E3D381 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4231202253BF7000E3D381 /* main.m */; };
 		4A4231292253C3A000E3D381 /* CYUSBChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4231282253C3A000E3D381 /* CYUSBChannel.m */; };
+		4A45BA45225A4B8B0001FE39 /* PTData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A45BA44225A4B8B0001FE39 /* PTData.m */; };
 		78EC9D6E2259F1E4000E396E /* CYNetworkChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EC9D6D2259F1E4000E396E /* CYNetworkChannel.m */; };
 		78EC9D732259F3A5000E396E /* CYProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EC9D722259F3A5000E396E /* CYProtocol.m */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,8 @@
 		4A4231272253C3A000E3D381 /* CYUSBChannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYUSBChannel.h; sourceTree = "<group>"; };
 		4A4231282253C3A000E3D381 /* CYUSBChannel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYUSBChannel.m; sourceTree = "<group>"; };
 		4A42312A2253C53F00E3D381 /* CYCommonDefind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYCommonDefind.h; sourceTree = "<group>"; };
+		4A45BA43225A4B8B0001FE39 /* PTData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTData.h; sourceTree = "<group>"; };
+		4A45BA44225A4B8B0001FE39 /* PTData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTData.m; sourceTree = "<group>"; };
 		78EC9D6C2259F1E4000E396E /* CYNetworkChannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYNetworkChannel.h; sourceTree = "<group>"; };
 		78EC9D6D2259F1E4000E396E /* CYNetworkChannel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNetworkChannel.m; sourceTree = "<group>"; };
 		78EC9D712259F3A5000E396E /* CYProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYProtocol.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				78EC9D6D2259F1E4000E396E /* CYNetworkChannel.m */,
 				78EC9D712259F3A5000E396E /* CYProtocol.h */,
 				78EC9D722259F3A5000E396E /* CYProtocol.m */,
+				4A45BA43225A4B8B0001FE39 /* PTData.h */,
+				4A45BA44225A4B8B0001FE39 /* PTData.m */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				78EC9D6E2259F1E4000E396E /* CYNetworkChannel.m in Sources */,
 				4A4231292253C3A000E3D381 /* CYUSBChannel.m in Sources */,
 				4A4231212253BF7000E3D381 /* main.m in Sources */,
+				4A45BA45225A4B8B0001FE39 /* PTData.m in Sources */,
 				4A40C14B225501220033118F /* CYUsbPort.m in Sources */,
 				78EC9D732259F3A5000E396E /* CYProtocol.m in Sources */,
 			);

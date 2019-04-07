@@ -11,9 +11,19 @@
 static const uint32_t PTFrameTypeEndOfStream = 0;
 static const uint32_t PTFrameNoTag = 0;
 
+typedef void(^TextMessageCallback)(NSString* text);
+typedef void(^DeviceInfoCallback)(NSDictionary* dic);
+
+
 @interface CYProtocol : NSObject
 
-- (void)readFramesOverChannel:(dispatch_io_t)channel queue:(dispatch_queue_t)queue onFrame:(void(^)(NSError*, uint32_t, uint32_t, uint32_t, dispatch_block_t))onFrame;
+- (void)startReadingOnChannel:(dispatch_io_t)channel queue:(dispatch_queue_t)queue;
+- (void)sendText:(NSString*)text tag:(uint32_t)tag overChannel:(dispatch_io_t)channel queue:(dispatch_queue_t)queue;
+
+
+- (void)registerTextMessageHandler:(TextMessageCallback)callback;
+- (void)registerDeviceInfoHandler:(DeviceInfoCallback)callback;
+
 
 @end
 

@@ -9,7 +9,6 @@
 #import "CYUsbPort.h"
 #import "CYUSBChannel.h"
 #import "CYUSBMuxdDefind.h"
-
 static NSString *kPlistPacketTypeListen = @"Listen";
 static NSString *kPlistPacketTypeConnect = @"Connect";
 static const int PTExampleProtocolIPv4PortNumber = 2345;
