@@ -8,8 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^BroadcastCallback)(NSDictionary*);
+
 @interface CYUSBChannel : NSObject
 
-- (void)connect;
+- (void)connect:(void(^)(NSError*))callback;
+
+- (void)sendPacket:(NSDictionary*)packet callback:(void(^)(NSError*,NSDictionary*))callback;
+
+- (void)registerBroadcastPackHandler:(BroadcastCallback)callback;
+
+- (dispatch_io_t)transferBackingChannel;
 
 @end

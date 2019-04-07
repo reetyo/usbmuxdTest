@@ -34,12 +34,12 @@ typedef enum : uint32_t{
 
 #pragma pack (1)
 
-struct Usbmux_packet {
+typedef struct{
     uint32_t size;
     USBMuxPacketProtocol protocol;
     USBMuxPacketType type;
     uint32_t tag;
     char data[0];
-};
+}Usbmux_packet;
 
 #pragma pack ()

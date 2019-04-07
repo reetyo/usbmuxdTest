@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^ConnectCallback)(dispatch_io_t channel);
+
 @interface CYUsbPort : NSObject
 
-@end
+- (void)registerConnectCallback:(ConnectCallback) callback;
 
+@end

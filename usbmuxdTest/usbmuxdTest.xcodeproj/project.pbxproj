@@ -10,6 +10,8 @@
 		4A40C14B225501220033118F /* CYUsbPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A40C14A225501220033118F /* CYUsbPort.m */; };
 		4A4231212253BF7000E3D381 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4231202253BF7000E3D381 /* main.m */; };
 		4A4231292253C3A000E3D381 /* CYUSBChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4231282253C3A000E3D381 /* CYUSBChannel.m */; };
+		78EC9D6E2259F1E4000E396E /* CYNetworkChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EC9D6D2259F1E4000E396E /* CYNetworkChannel.m */; };
+		78EC9D732259F3A5000E396E /* CYProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EC9D722259F3A5000E396E /* CYProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,10 @@
 		4A4231272253C3A000E3D381 /* CYUSBChannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYUSBChannel.h; sourceTree = "<group>"; };
 		4A4231282253C3A000E3D381 /* CYUSBChannel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYUSBChannel.m; sourceTree = "<group>"; };
 		4A42312A2253C53F00E3D381 /* CYCommonDefind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYCommonDefind.h; sourceTree = "<group>"; };
+		78EC9D6C2259F1E4000E396E /* CYNetworkChannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYNetworkChannel.h; sourceTree = "<group>"; };
+		78EC9D6D2259F1E4000E396E /* CYNetworkChannel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNetworkChannel.m; sourceTree = "<group>"; };
+		78EC9D712259F3A5000E396E /* CYProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYProtocol.h; sourceTree = "<group>"; };
+		78EC9D722259F3A5000E396E /* CYProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +86,20 @@
 				4A40C14C2255016A0033118F /* usb */,
 				4A4231202253BF7000E3D381 /* main.m */,
 				4A42312A2253C53F00E3D381 /* CYCommonDefind.h */,
+				78EC9D702259F366000E396E /* network */,
 			);
 			path = usbmuxdTest;
+			sourceTree = "<group>";
+		};
+		78EC9D702259F366000E396E /* network */ = {
+			isa = PBXGroup;
+			children = (
+				78EC9D6C2259F1E4000E396E /* CYNetworkChannel.h */,
+				78EC9D6D2259F1E4000E396E /* CYNetworkChannel.m */,
+				78EC9D712259F3A5000E396E /* CYProtocol.h */,
+				78EC9D722259F3A5000E396E /* CYProtocol.m */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78EC9D6E2259F1E4000E396E /* CYNetworkChannel.m in Sources */,
 				4A4231292253C3A000E3D381 /* CYUSBChannel.m in Sources */,
 				4A4231212253BF7000E3D381 /* main.m in Sources */,
 				4A40C14B225501220033118F /* CYUsbPort.m in Sources */,
+				78EC9D732259F3A5000E396E /* CYProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
